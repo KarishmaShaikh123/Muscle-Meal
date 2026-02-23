@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Size</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: white;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .product-image, .product-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #e60000;
+    }
+    h2 {
+      color: #ff6600;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .button-container {
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+    .btn-checkout,
+    .btn-whatsapp {
+      padding: 16px 32px;
+      font-size: 18px;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+    }
+    .btn-checkout {
+      background-color: #e60000;
+      color: white;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+    }
+    select {
+      padding: 8px;
+      font-size: 16px;
+      margin: 10px 0 20px 0;
+    }
+    .top-arrow {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e60000;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 22px;
+      cursor: pointer;
+      text-align: center;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+    .top-arrow:hover {
+      background-color: #b30000;
+    }
+    @media screen and (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+      }
+      .btn-checkout,
+      .btn-whatsapp {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div style="position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: #1A1A1A; box-shadow: 0 2px 10px rgba(0,0,0,0.6);">
+  <div style="display: flex; align-items: center;">
+    <img src="logo.png" alt="Muscle Meal Logo" style="height: 60px; margin-right: 15px;" />
+    <a href="index.html" style="color: #FF3131; font-size: 28px; font-weight: bold; text-decoration: none;">Muscle Meal</a>
+  </div>
+  <div>
+    <a href="index(8).html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Home</a>
+    <a href="shop.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Shop</a>
+    <a href="story.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Story</a>
+    <a href="blog.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Blog</a>
+  </div>
+</div>
+
+<!-- Back Arrow -->
+<a href="shop.html" style="position: fixed; top: 120px; left: 20px; text-decoration: none; font-size: 32px; background-color: #222; padding: 12px 18px; border-radius: 50px; color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); z-index: 9999; user-select: none;" title="Back to shop">&larr;</a>
+
+<div class="container">
+
+  <!-- Product Image & Info -->
+  <div class="product-section">
+    <div class="product-image">
+      <img src="p4.png" alt="Animal Size">
+    </div>
+
+    <div class="product-info">
+      <h1>Animal Size - Extreme Mass Gainer</h1>
+      <p><strong>Flavor:</strong>
+        <select name="flavor" id="flavor">
+          <option value="chocolate">Chocolate Thunder</option>
+          <option value="vanilla">Vanilla Ice Cream</option>
+          <option value="strawberry">Strawberry Blast</option>
+        </select>
+      </p>
+      <p><strong>Quantity:</strong>
+        <select name="quantity" id="quantity">
+          <option value="1">1 unit</option>
+          <option value="2">2 units</option>
+          <option value="3">3 units</option>
+          <option value="4">4 units</option>
+          <option value="5">5 units</option>
+        </select>
+      </p>
+      <p><strong>Net Weight:</strong> 3.5 kg</p>
+      <p><strong>MRP:</strong> ₹7000</p>
+      <p><strong>Calories per Serving:</strong> 1250 kcal</p>
+      <p><strong>Protein per Serving:</strong> 50g</p>
+      <p><strong>Carbohydrates:</strong> 250g</p>
+      <p><strong>Usage:</strong> Mass Gain & Strength Building</p>
+      <p><strong>Certified:</strong> FDA, FSSAI, cGMP</p>
+    </div>
+  </div>
+
+  <!-- Product Details -->
+  <h2>Product Description</h2>
+  <p>
+    Animal Size is a high-calorie mass gainer designed to help hardcore athletes gain serious size and strength. With a balanced blend of protein, carbs, and essential nutrients, it’s the ultimate choice for extreme bulking.
+  </p>
+
+  <h2>Product Details</h2>
+  <ul>
+    <li>Brand: Animal</li>
+    <li>Flavors: Chocolate Thunder, Vanilla Ice Cream, Strawberry Blast</li>
+    <li>Weight: 3.5 kg</li>
+    <li>Protein: 50g per serving</li>
+    <li>Calories: 1250 kcal per serving</li>
+    <li>Carbs: 250g</li>
+    <li>Enriched with Creatine, Glutamine & Vitamins</li>
+    <li>Certified: FSSAI, FDA, cGMP</li>
+  </ul>
+
+  <h2>Ingredients</h2>
+  <ul>
+    <li>Whey Protein Blend</li>
+    <li>Maltodextrin</li>
+    <li>Creatine Monohydrate</li>
+    <li>L-Glutamine</li>
+    <li>Multivitamin Complex</li>
+    <li>Natural & Artificial Flavors</li>
+  </ul>
+
+  <h2>Directions for Use</h2>
+  <ul>
+    <li>Mix 2 heaping scoops with 500ml cold milk or water</li>
+    <li>Shake or blend for 30–40 seconds</li>
+    <li>Consume twice a day between meals and post-workout</li>
+  </ul>
+
+  <h2>Indications</h2>
+  <ul>
+    <li>For hard gainers and bodybuilders</li>
+    <li>Supports rapid muscle mass and size gains</li>
+    <li>Not suitable for diabetic individuals</li>
+  </ul>
+
+  <h2>Important Information</h2>
+  <ul>
+    <li>Store in a cool, dry place</li>
+    <li>Use within 30 days after opening</li>
+    <li>Keep out of reach of children</li>
+  </ul>
+
+  <h2>Legal Disclaimer</h2>
+  <p>
+    This product is a high-calorie dietary supplement and should not be used as a sole source of nutrition. Consult your physician or nutritionist before use, especially if you have a medical condition.
+  </p>
+
+  <!-- Buttons -->
+  <div class="button-container">
+    <a href="https://yourstorelink.com/checkout" class="btn-checkout">Proceed to Checkout</a>
+    <a href="https://wa.me/917350789100?text=Hi%2C%20I%20want%20to%20order%20Animal%20Size%20Mass%20Gainer" class="btn-whatsapp" target="_blank">Order on WhatsApp</a>
+  </div>
+
+</div>
+
+</body>
+</html>

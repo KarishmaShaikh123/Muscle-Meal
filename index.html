@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muscle Meal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body style="margin:0; font-family:'Segoe UI', sans-serif; background-color: #0D0D0D; color: #fff;overflow-x: hidden;
+">
+
+<!-- Navigation Bar -->
+<div
+  style="
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1A1A1A;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  "
+  onmouseover="this.style.opacity='0.90';"
+  onmouseout="this.style.opacity='1';"
+>
+  
+  <!-- Logo -->
+  <div style="display: flex; align-items: center;">
+    <img src="logo.png" alt="Muscle Meal Logo" style="height: 60px; margin-right: 15px;">
+    <a href="index.html" style="color: #FF3131; font-size: 28px; font-weight: bold; text-decoration: none;">Muscle Meal</a>
+  </div>
+  
+  <!-- Navigation Links -->
+  <div>
+    <a href="index(8).html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Home</a>
+    <a href="shop.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Shop</a>
+    <a href="story.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Story</a>
+    <a href="blog.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Blog</a>
+     <a href="contact.html" style="color: #CCCCCC; margin: 0 20px; text-decoration: none; font-weight: 500;">Contact Us</a>
+  </div>
+</div>
+
+ <!-- Slider Container (add this to wrap your slides) -->
+<div style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+
+  <!-- SLIDE 1 -->
+  <div class="slide" style="position: absolute; width: 100%; height: 100%; background: url('bk1.png') no-repeat center center/cover; display: flex; align-items: center; padding-left: 60px; transition: opacity 1s ease; opacity: 1;">
+    <div style="max-width: 600px; background: rgba(13,13,13,0.85); padding: 40px; border-left: 6px solid #FF3131; border-radius: 10px;">
+      <h1 style="font-size: 48px; margin-bottom: 10px; color: #FF3131;">MUSCLE MEAL X ELITE FUEL</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px; color: #CCCCCC;">
+        Premium performance starts with premium fuel. Support your strength, recovery, and endurance—every single day.
+      </p>
+      <a href="shop.html" style="display: inline-block; background: #FF3131; color: white; padding: 14px 30px; text-decoration: none; font-weight: bold; font-size: 16px; border-radius: 5px;">
+        LET’S GO
+      </a>
+    </div>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide" style="position: absolute; width: 100%; height: 100%; background: url('bk2.png') no-repeat center center/cover; display: flex; align-items: center; padding-left: 60px; transition: opacity 1s ease; opacity: 0;">
+    <div style="max-width: 600px; background: rgba(13,13,13,0.85); padding: 40px; border-left: 6px solid #FF3131; border-radius: 10px;">
+      <h1 style="font-size: 48px; margin-bottom: 10px; color: #FF3131;">STRENGTH THAT STICKS</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px; color: #CCCCCC;">
+        Fuel your fire. Build the body you’ve always wanted—with clean energy and serious power.
+      </p>
+      <a href="shop.html" style="display: inline-block; background: #FF3131; color: white; padding: 14px 30px; text-decoration: none; font-weight: bold; font-size: 16px; border-radius: 5px;">
+        SHOP NOW
+      </a>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide" style="position: absolute; width: 100%; height: 100%; background: url('bk3.png') no-repeat center center/cover; display: flex; align-items: center; padding-left: 60px; transition: opacity 1s ease; opacity: 0;">
+    <div style="max-width: 600px; background: rgba(13,13,13,0.85); padding: 40px; border-left: 6px solid #FF3131; border-radius: 10px;">
+      <h1 style="font-size: 48px; margin-bottom: 10px; color: #FF3131;">TRAIN. GAIN. REPEAT.</h1>
+      <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px; color: #CCCCCC;">
+        Unleash your inner beast with the perfect blend of strength, stamina, and smart recovery.
+      </p>
+      <a href="shop.html" style="display: inline-block; background: #FF3131; color: white; padding: 14px 30px; text-decoration: none; font-weight: bold; font-size: 16px; border-radius: 5px;">
+        SHOP NOW
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Inline JS for Auto-Slide -->
+<script>
+  let slides = document.getElementsByClassName('slide');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].style.opacity = 0;
+    current = (current + 1) % slides.length;
+    slides[current].style.opacity = 1;
+  }, 2000); // 3 seconds
+</script>
+
+<div style="display: flex; width: 100%; min-height: 400px; background-color: black; color: white;">
+
+  <!-- LEFT: Image with link -->
+  <div style="flex: 1; display: flex; align-items: center; justify-content: center; background-color: black; padding: 20px;">
+    <a href="shop.html" target="_blank" rel="noopener noreferrer">
+      <img src="im1.png" alt="Muscle Meal Products" style="max-width: 100%; height: auto; border-radius: 10px;">
+    </a>
+  </div>
+
+  <!-- RIGHT: Text and Button -->
+  <div style="flex: 1; background-color: #FF3131; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+    <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 20px;">FUEL YOUR POWER</h1>
+    <p style="font-size: 1.25rem; margin-bottom: 30px;">
+      Your limits are just the starting line. Push harder. Grow stronger. Muscle up with purpose.
+    </p>
+    <a href="shop.html" style="text-decoration: none;">
+  <button style="background-color: white; color: black; font-weight: bold; padding: 14px 30px; border: none; border-radius: 6px; cursor: pointer; width: max-content; transition: background-color 0.3s;">
+    EXPLORE PRODUCTS
+  </button>
+</a>
+
+  </div>
+
+</div>
+
+<div style="background-color:#373737; color:white; padding:40px 0; text-align:center;">
+  <div style="display:flex; justify-content:space-around; align-items:center; max-width:1200px; margin:0 auto;">
+
+    <div style="font-size:28px; font-weight:bold; letter-spacing:2px;">CHOOSE YOUR FOCUS</div>
+
+    <div style="width:1px; height:100px; background-color:#f44336;"></div>
+
+    <a href="boost.html" style="text-decoration:none; color:white;">
+      <div style="text-align:center; cursor:pointer;" 
+           onmouseover="this.style.color='#ff6666'; this.style.fontSize='20px';" 
+           onmouseout="this.style.color='white'; this.style.fontSize='18px';">
+        <div style="font-size:28px;">⚡</div>
+        <div style="margin-top:10px; font-weight:bold; font-size:18px;">BOOST</div>
+      </div>
+    </a>
+
+    <div style="width:1px; height:100px; background-color:#f44336;"></div>
+
+    <a href="strength.html" style="text-decoration:none; color:white;">
+      <div style="text-align:center; cursor:pointer;" 
+           onmouseover="this.style.color='#ff6666'; this.style.fontSize='20px';" 
+           onmouseout="this.style.color='white'; this.style.fontSize='18px';">
+        <div style="font-size:28px;">💪</div>
+        <div style="margin-top:10px; font-weight:bold; font-size:18px;">STRENGTH</div>
+      </div>
+    </a>
+
+    <div style="width:1px; height:100px; background-color:#f44336;"></div>
+
+    <a href="burn.html" style="text-decoration:none; color:white;">
+      <div style="text-align:center; cursor:pointer;" 
+           onmouseover="this.style.color='#ff6666'; this.style.fontSize='20px';" 
+           onmouseout="this.style.color='white'; this.style.fontSize='18px';">
+        <div style="font-size:28px;">🔥</div>
+        <div style="margin-top:10px; font-weight:bold; font-size:18px;">BURN</div>
+      </div>
+    </a>
+
+    <div style="width:1px; height:100px; background-color:#f44336;"></div>
+
+    <a href="heal.html" style="text-decoration:none; color:white;">
+      <div style="text-align:center; cursor:pointer;" 
+           onmouseover="this.style.color='#ff6666'; this.style.fontSize='20px';" 
+           onmouseout="this.style.color='white'; this.style.fontSize='18px';">
+        <div style="font-size:28px;">❤️‍🩹</div>
+        <div style="margin-top:10px; font-weight:bold; font-size:18px;">HEAL</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+ <section style="
+  background: linear-gradient(
+    to bottom, 
+    #ff6666,   /* lighter red */
+    #e62424,   /* medium red */
+    #8b0000    /* darker red */
+  );
+  text-align: center; 
+  padding: 50px 20px;
+">
+
+  <div style="font-size: 36px; font-weight: 900; color: rgb(255, 255, 255); letter-spacing: 1px; text-transform: uppercase;">
+    Unleash Your Inner Beast
+  </div>
+  <div style="font-size: 16px; color: rgb(255, 255, 255); margin-top: 10px; letter-spacing: 0.5px;">
+    Power your goals with Muscle Meal. Built for strength, made with purpose.
+  </div>
+
+ <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; max-width: 1100px; margin: 40px auto;">
+  
+  <a href="shop.html" 
+     style="position: relative; overflow: hidden; border-radius: 8px; cursor: pointer; transition: transform 0.4s ease; display: block;"
+     onmouseover="this.querySelector('img').style.transform='scale(1.05)';"
+     onmouseout="this.querySelector('img').style.transform='scale(1)';"
+  >
+    <img src="i1.png" alt="Shop Muscle Meal" style="width: 100%; height: 300px; object-fit: cover; display: block; transition: transform 0.4s ease;">
+    <div style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.7); width: 100%; color: white; text-align: center; padding: 15px 0; font-weight: bold; letter-spacing: 1px; font-size: 18px; text-transform: uppercase;">
+      Shop
+    </div>
+  </a>
+
+  <a href="story.html" 
+     style="position: relative; overflow: hidden; border-radius: 8px; cursor: pointer; transition: transform 0.4s ease; display: block;"
+     onmouseover="this.querySelector('img').style.transform='scale(1.05)';"
+     onmouseout="this.querySelector('img').style.transform='scale(1)';"
+  >
+    <img src="i2.png" alt="Our Story" style="width: 100%; height: 300px; object-fit: cover; display: block; transition: transform 0.4s ease;">
+    <div style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.7); width: 100%; color: white; text-align: center; padding: 15px 0; font-weight: bold; letter-spacing: 1px; font-size: 18px; text-transform: uppercase;">
+      Story
+    </div>
+  </a>
+
+  <a href="blog.html" 
+     style="position: relative; overflow: hidden; border-radius: 8px; cursor: pointer; transition: transform 0.4s ease; display: block;"
+     onmouseover="this.querySelector('img').style.transform='scale(1.05)';"
+     onmouseout="this.querySelector('img').style.transform='scale(1)';"
+  >
+    <img src="im1.png" alt="Read Our Blog" style="width: 100%; height: 300px; object-fit: cover; display: block; transition: transform 0.4s ease;">
+    <div style="position: absolute; bottom: 0; background: rgba(0, 0, 0, 0.7); width: 100%; color: white; text-align: center; padding: 15px 0; font-weight: bold; letter-spacing: 1px; font-size: 18px; text-transform: uppercase;">
+      Blog
+    </div>
+  </a>
+
+</div>
+
+
+  <div style="background: #000000; padding: 30px; margin: 30px auto 0; max-width: 600px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); border-top: 4px solid red;">
+    <div style="font-size: 22px; font-weight: bold; color: #ffffff;">WHY MUSCLE MEAL?</div>
+    <div style="margin-top: 10px; color: rgb(255, 255, 255);">It's more than just fuel. It's a lifestyle committed to transformation.</div>
+    <div style="margin-top: 20px; display: inline-block;">
+      <a 
+        href="story.html" 
+        style="
+          padding: 10px 25px;
+          background: black;
+          color: white;
+          text-decoration: none;
+          border-radius: 25px;
+          font-weight: bold;
+          transition: all 0.3s ease-in-out;
+          display: inline-block;
+        "
+        onmouseover="this.style.transform='scale(1.1)'; this.style.fontSize='18px'; this.style.background='red';"
+        onmouseout="this.style.transform='scale(1)'; this.style.fontSize='initial'; this.style.background='black';"
+      >
+        Explore Our Journey
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+<div style="background-color: #000; color: #fff; font-family: Arial, sans-serif; padding: 40px 20px; text-align: center;">
+  <!-- STAY CONNECTED -->
+  <h2 style="font-size: 28px; color: #e10600; margin-bottom: 10px;">STAY CONNECTED</h2>
+  <p style="font-size: 16px; color: #ccc;">Fuel your passion. Share your journey. Use <strong style="color: #fff;">#MuscleMeal</strong></p>
+
+  <!-- SOCIAL ICONS -->
+  <div style="margin: 20px 0;">
+    <a href="#" style="margin: 0 15px; color: #e10600; font-size: 24px;"><i class="fab fa-instagram"></i></a>
+    <a href="#" style="margin: 0 15px; color: #e10600; font-size: 24px;"><i class="fab fa-youtube"></i></a>
+    <a href="#" style="margin: 0 15px; color: #e10600; font-size: 24px;"><i class="fab fa-facebook-f"></i></a>
+  </div>
+
+  <!-- AVAILABLE ON -->
+  <p style="margin-top: 20px; font-size: 16px; color: #bbb;">
+    <i class="fas fa-shopping-cart" style="color:#e10600;"></i> Available on 
+    <strong style="color: #fff;">Amazon</strong> & <strong style="color: #fff;">Flipkart</strong>
+  </p>
+
+  <!-- CONTACT FORM -->
+  <div style="margin-top: 30px; background-color: #1a1a1a; padding: 30px; border-radius: 10px; display: inline-block; width: 90%; max-width: 500px;">
+    <h3 style="color: #fff; margin-bottom: 15px;">GET IN TOUCH</h3>
+    <p style="color: #bbb; font-size: 14px;">Have questions? We're here to help!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required
+        style="padding: 10px; width: 90%; border: none; border-radius: 5px; margin: 10px 0;">
+      <br>
+      <input type="email" placeholder="Your Email Address" required
+        style="padding: 10px; width: 90%; border: none; border-radius: 5px; margin: 10px 0;">
+      <br>
+      <textarea placeholder="Your Message" required rows="4"
+        style="padding: 10px; width: 90%; border: none; border-radius: 5px; margin: 10px 0;"></textarea>
+      <br>
+      <button type="submit"
+        style="padding: 10px 20px; background-color: #e10600; color: #fff; border: none; border-radius: 5px; cursor: pointer;">SEND MESSAGE</button>
+    </form>
+  </div>
+
+  <!-- FOOTER NAVIGATION -->
+  <div style="margin-top: 40px; color: #999; font-size: 14px;">
+    <a href="#" style="margin: 0 15px; color: #ccc; text-decoration: none;">Contact Us</a>|
+    <a href="#" style="margin: 0 15px; color: #ccc; text-decoration: none;">Our Story</a>|
+    <a href="#" style="margin: 0 15px; color: #ccc; text-decoration: none;">Careers</a>
+  </div>
+
+  <!-- ADDRESS SECTION -->
+  <div style="margin-top: 30px; color: #bbb; font-size: 14px; line-height: 1.6;">
+    <strong>Address:</strong> Survey No. 24,
+     Ravivar Peth, Phaltan, Satara, Maharashtra<br>
+    <strong>Email:</strong> <a href="mailto:musclemeal@gmail.com" style="color: #999;">musclemeal@gmail.com</a><br>
+    <strong>Customer Care:</strong> <a href="tel:7350789100" style="color: #999;">7350789100</a>
+  </div>
+
+  <!-- BRAND LOGO -->
+  <div style="margin-top: 30px;">
+    <span style="font-size: 26px; color: #e10600; font-weight: bold;"> Muscle<span style="color: #fff;">Meal</span></span>
+  </div>
+
+  <!-- PRIVACY NOTICE -->
+  <p style="font-size: 12px; color: #666; margin-top: 20px;">
+    Your privacy is important to us. Contact <a href="mailto:privacy@musclemeal.com" style="color: #999;">privacy@musclemeal.com</a> for any data-related queries.
+  </p>
+</div>
+
+
+
+
+</body>
+</html>
